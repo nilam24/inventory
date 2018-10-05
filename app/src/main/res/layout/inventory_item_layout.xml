@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        android:padding="@dimen/linear1">
+
+            <ImageView
+                android:id="@+id/imageviewId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/ImageView"
+                android:padding="6dp"
+                android:scaleX=".6"
+                android:scaleY=".6"
+                android:background="@color/colorAccent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/linear11"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:srcCompat="@android:drawable/btn_star" />
+
+
+        <LinearLayout
+            android:id="@+id/linear11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/linear1">
+
+            <TextView
+                android:id="@+id/textProductNm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:text="@string/text_Name"
+                android:textSize="15sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear1"
+                app:layout_constraintRight_toLeftOf="@id/linearTop"
+                tools:layout_editor_absoluteX="137dp"
+                tools:layout_editor_absoluteY="58dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear1"
+                android:padding="@dimen/linear2"
+                android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textProductPr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/text_Price"
+                android:textSize="15sp"
+                app:layout_constraintRight_toLeftOf="@+id/linearTop"
+                app:layout_constraintLeft_toRightOf="@+id/textQ"
+                app:layout_constraintTop_toBottomOf="@+id/btnSal"
+                tools:layout_editor_absoluteX="271dp"
+                tools:layout_editor_absoluteY="58dp" />
+
+
+
+            <TextView
+                android:id="@+id/textQ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:textSize="15sp"
+                android:text="@string/text_Quantity"
+                app:layout_constraintLeft_toRightOf="@+id/textProductPr"
+                app:layout_constraintTop_toBottomOf="@+id/btnSal"
+
+
+                />
+
+            </LinearLayout>
+            
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/linear12"
+                android:padding="12dp"
+                android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textq2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="6dp"
+                android:textSize="15sp"
+                android:text="@string/text_Quantity"
+                app:layout_constraintRight_toLeftOf="@+id/linear11"
+                app:layout_constraintTop_toBottomOf="@+id/linear11"
+                app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+            <Button
+                android:id="@+id/btnSal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/buttonSale"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:background="@color/colorYellow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/textq2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear11" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="in.cdac.inventoryap.MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPink"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/linear2">
+
+            <LinearLayout
+                android:id="@+id/linear2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/linear2">
+
+                <TextView
+                    android:id="@+id/text_Image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:padding="3dp"
+                    android:text="@string/text_Image"
+                    android:textSize="13sp"
+                    app:layout_constraintHorizontal_bias="0.116"
+                    app:layout_constraintLeft_toRightOf="@+id/imageView1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.163" />
+
+
+                <ImageView
+
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorYellow"
+                    android:contentDescription="@string/ImageView"
+                    android:padding="4dp"
+                    android:scaleX="0.9"
+                    android:scaleY="0.9"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/text_Image1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/btn_star"
+                    tools:layout_editor_absoluteX="80dp"
+                    tools:layout_editor_absoluteY="391dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/linear2">
+
+                <TextView
+                    android:id="@+id/text_Name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:padding="3dp"
+                    android:text="@string/text_Name"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toTopOf="@+id/linear4"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear2" />
+
+                <EditText
+                    android:id="@+id/editText_Name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="12dp"
+                    android:ems="8"
+                    android:hint="@string/editText_Name"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:textSize="13sp"
+                    app:layout_constraintLeft_toRightOf="@+id/text_Name1"
+                    app:layout_constraintTop_toBottomOf="@+id/linear2"
+
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/linear2">
+
+                <TextView
+                    android:id="@+id/text_Price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:padding="3dp"
+                    android:text="@string/text_Price"
+                    android:textSize="13sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/editText_Price1"
+                    app:layout_constraintTop_toBottomOf="@+id/linear3"
+
+                    />
+
+                <EditText
+                    android:id="@+id/editText_Price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:ems="6"
+                    android:hint="@string/editText_Price"
+                    android:inputType="numberDecimal"
+                    android:padding="6dp"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toTopOf="@+id/linear3"
+                    app:layout_constraintTop_toBottomOf="@+id/linear2" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/linear2">
+
+                <TextView
+                    android:id="@+id/text_Quantity1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:padding="3dp"
+                    android:text="@string/text_Quantity"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toTopOf="@+id/linear5"
+                    app:layout_constraintEnd_toStartOf="@+id/linear5"
+                    app:layout_constraintLeft_toLeftOf="parent" />
+
+                <EditText
+                    android:id="@+id/editText_Quantity1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:ems="6"
+                    android:hint="@string/editText_Quantity"
+                    android:inputType="number"
+                    android:padding="6dp"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toTopOf="@+id/linear5"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/linear2">
+
+
+                <TextView
+                    android:id="@+id/text_supplierName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+                    android:padding="3dp"
+                    android:text="@string/text_email"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toStartOf="@+id/editText5"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="357dp" />
+
+
+                <EditText
+                    android:id="@+id/editEmail12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="@string/editText_supplierEmail"
+                    android:inputType="textEmailAddress"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

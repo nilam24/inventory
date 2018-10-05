@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGreen"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/linear1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/linear1">
+
+            <LinearLayout
+                android:id="@+id/linear11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+
+                <TextView
+                    android:id="@+id/productName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="@string/text_Name"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/imageView12"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:layout_editor_absoluteX="55dp"
+                    tools:layout_editor_absoluteY="87dp" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:background="@color/colorYellow"
+                    android:contentDescription="@string/ImageView"
+                    android:padding="3dp"
+                    app:layout_constraintLeft_toRightOf="@+id/productName1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/btn_star_big_on"
+                    tools:layout_editor_absoluteX="233dp"
+                    tools:layout_editor_absoluteY="74dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/linear1">
+
+                <TextView
+                    android:id="@+id/price1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="@string/text_Price"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/price_value1"
+                    app:layout_constraintTop_toBottomOf="@+id/linear11"
+                    tools:layout_editor_absoluteX="55dp"
+                    tools:layout_editor_absoluteY="197dp" />
+
+                <TextView
+                    android:id="@+id/price_value1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="3dp"
+                    android:text="@string/editText_Price"
+                    app:layout_constraintLeft_toRightOf="@+id/price1"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear11"
+                    tools:layout_editor_absoluteX="224dp"
+                    tools:layout_editor_absoluteY="197dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/linear13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/linear1">
+
+
+                <TextView
+                    android:id="@+id/valueQuantity1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="3dp"
+                    android:text="@string/text_Quantity"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear12"
+                    tools:layout_editor_absoluteX="186dp"
+                    tools:layout_editor_absoluteY="311dp" />
+
+
+                <LinearLayout
+                    android:id="@+id/linear14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="2dp">
+
+                    <Button
+                        android:id="@+id/plusmodify"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp"
+                        android:text="@string/button_Plus"
+                        android:textSize="16sp"
+                        app:layout_constraintRight_toLeftOf="@+id/linear13"
+                        app:layout_constraintRight_toRightOf="parent"
+                        tools:layout_editor_absoluteX="283dp" />
+
+
+                    <Button
+                        android:id="@+id/minumodify"
+                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:padding="3dp"
+                        android:text="@string/button_Minus"
+                        android:textSize="16sp"
+                        app:layout_constraintRight_toLeftOf="@+id/linear13"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/plusmodify"
+                        tools:layout_editor_absoluteX="275dp"
+                        tools:layout_editor_absoluteY="368dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linear15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/linear1">
+
+                <TextView
+                    android:id="@+id/textEmailId1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:padding="3dp"
+                    android:text="@string/text_email"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    tools:layout_editor_absoluteY="466dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">InventoryAp</string>
+
+
+    <!--activity_main-->
+
+    <string name="text_Price">Rs</string>
+    <string name="text_Image">upload Image</string>
+    <string name="editText_Image">Image</string>
+    <string name="text_Name">Product Name</string>
+    <string name="editText_Name">enter product name</string>
+    <string name="editText_Price">enter price</string>
+    <string name="text_Quantity">Product Quantity</string>
+    <string name="text_email">Supplier Email ID</string>
+
+    <string name="editText_Quantity">enter quantity</string>
+    <string name="text_supplierName">Supplier Name</string>
+    <string name="editText_supplierName">enter supplier name</string>
+    <string name="editText_supplierEmail">enter email id </string>
+
+    <!--detail_layout-->
+
+    <string name="ImageView">image</string>
+    <string name="button_Plus">(+)</string>
+    <string name="button_Minus">(-)</string>
+    <string name="dialog_positive_btn">OK</string>
+    <string name="dialog_negative_btn">Cancel</string>
+    <string name="title">deletion confirmation</string>
+    <string name="message">are you sure to delete the information</string>
+
+
+    <!--inventory_item_layout-->
+    <string name="buttonSale">Sale</string>
+
+    <!--inventory_list_layout-->
+    <string name="ListView">product list</string>
+    <string name="empty_textView">"  Incase empty list: to populate data::click floating action button on bottom right side and fill all fields with valid products name, price,quantity,supplier email id, and select image of small size in kb" </string>
+    <string name="floating_action_btn">Add</string>
+
+
+</resources>

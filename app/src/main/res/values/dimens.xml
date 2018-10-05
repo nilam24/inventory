@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="linear1">10dp</dimen>
+    <dimen name="linear2">8dp</dimen>
+    <dimen name="textView_padding"></dimen>
+
+
+</resources>
